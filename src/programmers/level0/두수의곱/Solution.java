@@ -1,4 +1,4 @@
-package programmers.level0;
+package programmers.level0.두수의곱;
 
 public class Solution {
 	public int solution(int num1, int num2) {

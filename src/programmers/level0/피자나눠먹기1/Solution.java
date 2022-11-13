@@ -1,4 +1,4 @@
-package programmers.level0.피자나눠먹기;
+package programmers.level0.피자나눠먹기1;
 
 public class Solution {
 

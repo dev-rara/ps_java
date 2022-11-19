@@ -1,7 +1,6 @@
 package algorithm_study.정수제곱근판별;
 
 public class Solution {
-
 	public long solution(long n) {
 		long answer = (long) Math.sqrt(n);
 

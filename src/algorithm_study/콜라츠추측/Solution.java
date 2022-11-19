@@ -17,11 +17,10 @@ public class Solution {
 
 			if (number % 2 == 0) {
 				number /= 2;
-				answer++;
 			} else {
-				number = (long) (number * 3) + 1;
-				answer++;
+				number = number * 3 + 1;
 			}
+			answer++;
 		}
 
 		return answer;

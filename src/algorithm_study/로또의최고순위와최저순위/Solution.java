@@ -19,8 +19,8 @@ public class Solution {
 			}
 		}
 
-		answer[0] = getGrade(winCnt + zeroCnt);
-		answer[1] = getGrade(winCnt);
+		answer[0] = getRank(winCnt + zeroCnt);
+		answer[1] = getRank(winCnt);
 
 //		if (zeroCnt == 6) {
 //			answer[0] = 1;
@@ -48,7 +48,7 @@ public class Solution {
 		return answer;
 	}
 
-	public int getGrade(int n) {
+	public int getRank(int n) {
 		switch (n) {
 			case 6:
 				return 1;

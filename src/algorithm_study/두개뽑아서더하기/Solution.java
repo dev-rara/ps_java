@@ -17,9 +17,9 @@ public class Solution {
 
 		int[] answer = new int[set.size()];
 		int idx = 0;
-		Iterator iter = set.iterator();
+		Iterator<Integer> iter = set.iterator();
 		while (iter.hasNext()) {
-			answer[idx] = (int) iter.next();
+			answer[idx] = iter.next();
 			idx++;
 		}
 		Arrays.sort(answer);

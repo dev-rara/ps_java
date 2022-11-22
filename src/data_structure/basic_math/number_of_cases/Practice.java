@@ -13,6 +13,13 @@ public class Practice {
 	public ArrayList getDivisor(int num) {
 		ArrayList result = new ArrayList();
 
+		for (int i = 1; i <= (int)num / 2 ; i++) {
+			if(num % i == 0) {
+				result.add(i);
+			}
+		}
+		result.add(num);
+
 		return result;
 	}
 
@@ -21,6 +28,18 @@ public class Practice {
 	public int getGCD(int numA, int numB) {
 		int gcd = -1;
 
+		ArrayList divisorA = this.getDivisor(numA);
+		ArrayList divisorB = this.getDivisor(numB);
+
+		for(int itemA: (ArrayList<Integer>)divisorA) {
+			for(int itemB: (ArrayList<Integer>) divisorB) {
+				if (itemA == itemB) {                      //itemA와 itemB가 같은 경우(약수가 같은 경우)
+					if(itemA > gcd) {                      //현재의 gcd보다 큰 경우 itemA값을 저장
+						gcd = itemA;
+					}
+				}
+			}
+		}
 		return gcd;
 	}
 
@@ -28,6 +47,12 @@ public class Practice {
 //  LCM: the Lowest Common Multiple
 	public int getLCM(int numA, int numB) {
 		int lcm = -1;
+
+		int gcd = getGCD(numA, numB);
+
+		if (gcd != -1) {
+			lcm = numA * numB / gcd;
+		}
 
 		return lcm;
 	}
@@ -45,7 +70,7 @@ public class Practice {
 		System.out.println("l2 = " + l2);
 
 		System.out.println("최대 공약수: " + p.getGCD(number1, number2));
-		System.out.println("최대 공배수: " + p.getLCM(number1, number2));
+		System.out.println("최소 공배수: " + p.getLCM(number1, number2));
 	}
 }
 

@@ -11,11 +11,11 @@ public class Main {
 		ArrayList<Integer> primeList = new ArrayList<>();
 		ArrayList<Integer> noPrimeList = new ArrayList<>();
 
-		for (int i = 0; i < strArray.length; i++) {
-			if (!checkNumber(strArray[i])) {
-				noPrimeList.add(Integer.parseInt(strArray[i]));
+		for (String value : strArray) {
+			if (!checkNumber(value)) {
+				noPrimeList.add(Integer.parseInt(value));
 			} else {
-				primeList.add(Integer.parseInt(strArray[i]));
+				primeList.add(Integer.parseInt(value));
 			}
 		}
 

@@ -1,9 +1,9 @@
-package algorithm_study.모의고사문제풀이;
+package algorithm_study.알고리즘모의고사.신대륙발견;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class Practice {
+public class Main {
 	public String solution(int month, int day) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("M월 d일");
 
@@ -15,7 +15,7 @@ public class Practice {
 	}
 
 	public static void main(String[] args) {
-		Practice method = new Practice();
+		Main method = new Main();
 		System.out.println(method.solution(1, 18));
 		System.out.println(method.solution(11, 27));
 		System.out.println(method.solution(6, 22));

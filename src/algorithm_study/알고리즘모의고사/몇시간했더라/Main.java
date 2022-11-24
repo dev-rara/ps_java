@@ -1,6 +1,6 @@
-package algorithm_study.모의고사문제풀이;
+package algorithm_study.알고리즘모의고사.몇시간했더라;
 
-public class Practice02 {
+public class Main {
 
 	public int solution(int[] arr1, int[] arr2) {
 		int answer = 0;
@@ -16,7 +16,7 @@ public class Practice02 {
 	}
 
 	public static void main(String[] args) {
-		Practice02 method = new Practice02();
+		Main method = new Main();
 		int[] arr1 = {9, 9, 9, 9, 7, 9, 8};
 		int[] arr2 = {23, 23, 30, 28, 30, 23, 23};
 

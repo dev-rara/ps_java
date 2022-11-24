@@ -1,8 +1,8 @@
-package algorithm_study.모의고사문제풀이;
+package algorithm_study.알고리즘모의고사.소수의개수와덧셈;
 
 import java.util.ArrayList;
 
-public class Practice03 {
+public class Main {
 
 	public String solution(String s) {
 		StringBuilder answer = new StringBuilder();
@@ -47,7 +47,7 @@ public class Practice03 {
 	}
 
 	public static void main(String[] args) {
-		Practice03 method = new Practice03();
+		Main method = new Main();
 		String s1 = "97 75 88 99 95 92 73";
 		String s2 = "2 3 4 5";
 		String s3 = "15 3 10 9 7 8";
